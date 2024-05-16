@@ -1,8 +1,8 @@
-import { Activity } from "../types";
 import { useMemo, Dispatch } from "react";
-import { categories } from "../data/categories";
 import { PencilSquareIcon, XCircleIcon } from "@heroicons/react/24/outline";
-import { ActivityActions } from "../reducers/ActivityActions";
+import { Activity } from "../types";
+import { categories } from "../data/categories";
+import { ActivityActions } from "../reducers/activity-reducer";
 
 type ActivityListProps = {
   activities: Activity[];
@@ -33,7 +33,7 @@ export default function ActivityList({
         activities.map((activity) => (
           <div
             key={activity.id}
-            className="px-5 py-10 bg-white mt-5 flex justify-between"
+            className="px-5 py-10 bg-white mt-5 flex justify-between shadow"
           >
             <div className="space-y-2 relative">
               <p
