@@ -3,8 +3,7 @@ import { v4 as uuuiv4 } from "uuid";
 import { categories } from "../data/categories";
 import type { Activity } from "../types";
 import { ActivityState } from "../reducers/activity-reducer";
-import { ActivityActions } from "../reducers/ActivityActions";
-
+import { ActivityActions } from "../reducers/activity-reducer";
 type FormProps = {
   dispatch: Dispatch<ActivityActions>;
   state: ActivityState;
